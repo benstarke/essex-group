@@ -1,0 +1,112 @@
+
+{% extends "blog/base.html" %} 
+{% load static %}
+{% block content %}
+<main class="content">
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="{% url 'home' %}">Home</a> &rarr;
+            <a href="{% url 'about' %}">About Us</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        
+        
+        <div class="fullwidth-block">
+            <div class="container">
+                <h1>Welcome to Essex Group Company</h1>
+                <p class="leading muted">When you have a great story about how your product or service was built to change lives, share it. The "About Us" page is a great place for it to live, too. Good stories humanize your brand, providing context and meaning for your product. What’s more, good stories are sticky -- which means people are more likely to connect with them and pass them on.</p>
+            </div>
+        </div>
+        <div class="fullwidth-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <i class="fab fa-audible fa-10x pull-left"></i>
+                        <h3>Why Essex Group Company</h3>
+                        <p>With social features, employees at every level have a voice to contribute, share, and receive feedback. </p>
+
+                        <p>Built for lasting knowledge so you never lose great ideas or context in a transient notification or chat.</p>
+                        
+                        <hr class="spacer">
+                        <i class="fab fa-atlassian fa-10x pull-left ml-5"></i>
+                        <h3>Trust in Essex Group</h3>
+                        <p>Essex Group is purpose-built for teams that need a secure and reliable way to collaborate on mission-critical projects.  </p>
+
+                        <p> Essex Group sites are protected by privacy controls and data encryption, and meet industry-verified compliance standards. </p>
+
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <aside class="boxed-content" data-bg-color="#f6f7f9">
+                            <h3 class="wow fadeInUp">Welcome to our site</h3>
+                            <p class="wow fadeInUp">See how Essex Group can transform
+                                how your team works.</p>
+                            
+                            <hr class="spacer">
+                            <h3 class="wow fadeInUp">Through us</h3>
+                            <p class="wow fadeInUp">You will Connect the tools you already love</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fullwidth-block team-section" data-bg-color="#f6f7f9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="team wow bounceIn">
+                            <figure class="team-image"><img src="{% static 'dummy/person-1.jpg' %}" alt=""></figure>
+                            <h3 class="team-name">Mike Kirui</h3>
+                            <p>CEO, the founder of Essex Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .team-section -->
+
+        <div class="fullwidth-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInUp">
+                        <h1>We are glad to offer all these</h1>
+                        <p class="leading">EssexGroup is an end-to-end tech solutions provider and offers custom software engineering, cost-effective and innovative IT solutions to clients in diverse industries such as financial services, communications, retail, manufacturing, travel & transportation and public-sector industries.</p>
+                        <p>It is the people in the organisation who are the most important and valuable asset. They have emotions, feeling and a tender heart.</p>
+
+                         <p>The need of the hour is to remove the problem and help the individual to regain his or her self confidence and esteem and put his strength in work.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="wow fadeInRight">What is Essex Group</h1>
+
+                        <ul class="list-check">
+                            <li class="wow fadeInRight">
+                                <i class="fa fa-check"></i>
+                                <h3>Essex Group is a platform?</h3>
+                                <p>where customers needs is catered</p>
+                            </li>
+                            <li class="wow fadeInRight">
+                                <i class="fa fa-check"></i>
+                                <h3>What are the services offered by Essex Group?</h3>
+                                <p>Investment plans software products etc</p>
+                            </li>
+                            <li class="wow fadeInRight">
+                                <i class="fa fa-check"></i>
+                                <h3>Where is Essex Group located?</h3>
+                                <p>Located in Kenya,Nairobi city</p>
+                            </li>
+                            <li class="wow fadeInRight">
+                                <i class="fa fa-check"></i>
+                                <h3>Who owns Essex Group company?</h3>
+                                <p>Mike Kirui,It student karatina campus</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- .inner-content -->
+</main> <!-- .content -->
+{% endblock %}

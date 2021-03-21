@@ -1,0 +1,58 @@
+
+{% extends "blog/base.html" %} 
+{% block content %}
+
+<main class="content">
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="{% url 'home' %}">Home</a> &rarr;
+            <a href="{% url 'services' %}">Services</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="fullwidth-block">
+            <div class="container">
+                <h1>We as Essex Group develop content that is going to get customers hooked and also feel the need to buy or sign-up at Essex Group.</h1>
+                <p class="leading muted">All the data we use is encrypted and protected – never sold to third parties. We have strict policies in place that ensure our methods are properly communicated and customer data is always protected. We never share customer contacts with third parties.</p>
+            </div>
+        </div>
+        
+        <div class="fullwidth-block feature-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 col-us">
+                        <div class="feature top-icon has-connector wow fadeInUp">
+                            <i class="fas fa-server fa-5x"></i>
+                            <h3 class="feature-title">Software products</h3>
+                            <p>The essential part of our projects is connected with Quality Assurance. QA department, the largest team in our company, performs testing of various software, web and mobile applications to bring projects up to standard.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-us">
+                        <div class="feature top-icon has-connector wow fadeInUp" data-wow-delay=".2s">
+                            <i class="fab fa-accusoft fa-5x"></i>
+                            <h3 class="feature-title">ICT consultancy</h3>
+                            <p>Our IT consulting firm provides a thorough, in-depth review of your IT environment that aligns with industry best practices and ensures your business requirements are achieved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-us">
+                        <div class="feature top-icon has-connector wow fadeInUp" data-wow-delay=".4s">
+                            <i class="fab fa-amazon-pay fa-5x"></i>
+                            <h3 class="feature-title">Loans provision</h3>
+                            <p>We designed our loan process to fit your needs and help you grow. As you build credit with Branch, you unlock larger loan amounts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-us wow fadeInUp" data-wow-delay=".6s">
+                        <div class="feature top-icon">
+                            <i class="fab fa-artstation fa-5x"></i>
+                            <h3 class="feature-title">Free Blogs and Articles</h3>
+                            <p>We provide information of different domain to our customers through free blogs and articles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .feature-section -->
+        
+    </div> <!-- .inner-content -->
+</main> <!-- .content -->
+{% endblock %}

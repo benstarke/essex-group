@@ -1,0 +1,99 @@
+{% extends 'blog/base.html' %}
+{% load static  %}
+{% block content %}
+
+<div id="site-content">
+    <main class="content">
+        {% block slider %} {% include 'slider.html' %} {% endblock slider %}
+
+        <div class="fullwidth-block feature-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature wow fadeInUp">
+                            <div class="feature-title">
+                                <span><img src="https://img.icons8.com/ios/100/000000/charity.png"/></span>
+                                <h2 class="title">Mk foundation</h2>
+                                <small class="subtitle">NGO for raising funds</small>
+                            </div>
+                            <div class="feature-summary">
+                                <p>We collaborate with other organisations and interested indiviuals in raising funds to help in donations.</p>
+                            </div>
+                            <a href="{% url 'services' %}" class="button">More info</a>
+                        </div> <!-- .feature -->
+                    </div> <!-- .col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="feature wow fadeInUp" data-wow-delay=".2s">
+                            <div class="feature-title">
+                                <img src="https://img.icons8.com/ios-filled/96/000000/growing-money.png"/>
+                                <h2 class="title">Investment plans</h2>
+                                <small class="subtitle">Plans to train customers </small>
+                            </div>
+                            <div class="feature-summary">
+                                <p>Clients are taught on how to make investment plan so as to have good return in near future.</p>
+                            </div>
+                            <a href="{% url 'services' %}" class="button">More info</a>
+                        </div> <!-- .feature -->
+                    </div> <!-- .col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="feature wow fadeInUp" data-wow-delay=".4s">
+                            <div class="feature-title">
+                                <img src="https://img.icons8.com/color/96/000000/waterfall.png"/>
+                                <h2 class="title">Tourism services</h2>
+                                <small class="subtitle">Traveling and Touring</small>
+                            </div>
+                            <div class="feature-summary">
+                                <p>Essex provides conducive emvironments for refreshment of there customers in case.</p>
+                            </div>
+                            <a href="{% url 'services' %}" class="button">More info</a>
+                        </div> <!-- .feature -->
+                    </div> <!-- .col-md-4 -->
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </div> <!-- .feature-section -->
+
+        
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 wow fadeInUp">
+                        <h2>Safe &amp; affordable services</h2>
+                        <p class="leading">Coming up with winning ideas is often the most difficult part of blogging, so it’s crucial to carve out time for creative thinking.</p>
+                        <p>We are nurturing a generation of business owners, business leaders, business builders. We invite you to join us and grow with us</p>
+                        <p>We recognise that the driving force of a space like ours is in the community and in collaboration, not in a single individual or company</p>
+                        <p>All young entrepreneurs start their journey with the dream of making it big in the world of business. Starting a business and successfully continuing it is a huge challenge. Immense planning and plotting goes on in the background. Only then a business gets a strong ground to stand on.</p>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="wow fadeInRight">What can you expect?</h2>
+                        <hr class="separator">
+                        <ul class="feature-list">
+                            <li class="wow fadeInRight">
+                                <i class="icon-money-globe"></i>
+                                <h3>Blogs and Articles all rouund</h3>
+                                <p>You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles. </p>
+                            </li>
+                            <li class="wow fadeInRight">
+                                <i class="icon-server-lock"></i>
+                                <h3>Donations to the needy in our society</h3>
+                                <p>The COVID-19 crisis is affecting all of us in a way no other crisis has. If you’re coping and able to help someone worse off, now is the time to act.  </p>
+                            </li>
+                            <li class="wow fadeInRight">
+                                <i class="icon-person-time"></i>
+                                <h3>Lifting our technology stand</h3>
+                                <p>Technological advances are a driving force for development. But policy choices determine who benefits. CGD focuses on three key questions around innovation, growth, and inequality</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div> <!-- .row -->
+
+            </div> <!-- .container -->
+        </div> <!-- .fullwidth-block -->
+    </main> <!-- .content -->
+
+</div> <!-- #site-content -->
+
+{% endblock %}

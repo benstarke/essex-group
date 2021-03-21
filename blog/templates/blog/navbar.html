@@ -1,0 +1,39 @@
+{% load static %}
+{% block navbar %}
+<header class="site-header">
+    <div class="top-header">
+        <div class="container">
+            <a href="tel:80049123441">Call Us: (254) 0796509538</a>
+            
+            <nav class="member-navigation pull-right">
+                {% if user.is_authenticated %}
+                <a href="{% url 'register' %}"><i class="fa fa-sign-out"></i> Logout</a>
+                {% else %}
+                <a href="{% url 'register' %}"><i class="fa fa-user"></i> Register</a>
+                <a href="{% url 'login' %}"><i class="fa fa-lock"></i> Login</a>
+                {% endif %}
+            </nav> <!-- .member-navigation -->
+        </div> <!-- .container -->
+    </div> <!-- .top-header -->
+
+    <div class="bottom-header">
+        <div class="container">
+            <a href="index.html" class="branding pull-left">
+            <img src="https://img.icons8.com/color/48/000000/pied-piper-season-3.png" class="logo-icon"/>
+                <h1 class="site-title">Essex <span>Group</span></h1> 
+                <h2 class="site-description">Business for Life</h2>
+            </a> <!-- #branding -->
+            
+            <nav class="main-navigation pull-right">
+                <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                <ul class="menu">
+                    <li class="menu-item"><a href="{% url 'post_list' %}">Blogs</a></li>
+                    <li class="menu-item"><a href="{% url 'about' %}">About Us</a></li>
+                    <li class="menu-item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav> <!-- .main-navigation -->
+        </div> <!-- .container -->
+    </div> <!-- .bottom-header -->
+</header> <!-- .site-header -->
+{% endblock navbar %}

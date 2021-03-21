@@ -1,0 +1,39 @@
+{% load static %}
+{% block navbar %}
+<footer class="site-footer wow fadeInUp">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div class=" branding">
+                    <img src="https://img.icons8.com/color/48/000000/pied-piper-season-3.png" class="logo-icon"/>
+                    <h1 class="site-title"><a href="#">Essex <span>Group</span></a></h1> 
+                    <h2 class="site-description">Business for Life</h2>
+                </div> <!-- .branding -->
+
+                <p class="copy">Copyright 2021 Essex Group. designed by Developer Ben. All rights reserved</p>
+            </div>
+            
+            <div class="col-md-6 align-right">
+            
+                <nav class="footer-navigation">
+                    <a href="{% url 'post_list' %}">Blogs</a>
+                    <a href="{% url 'about' %}">About us</a>
+                    <a href="{% url 'post_list' %}">Services</a>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </nav> <!-- .footer-navigation -->
+            
+                <div class="social-links">
+                    <a href="https://www.facebook.com/109903114172428/posts/215534333609305/?app=fbl" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                </div> <!-- .social-links -->
+            
+            </div>
+        </div>
+
+    </div>
+</footer> <!-- .site-footer -->
+{% endblock navbar %}
